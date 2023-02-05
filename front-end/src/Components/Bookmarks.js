@@ -5,8 +5,16 @@ import Bookmark from "./Bookmark";
 const API = process.env.REACT_APP_API_URL;
 
 function Bookmarks() {
-  const [bookmarks, setBookmarks] = useState([]);
-  useEffect(() => {}, []);
+
+  const [bookmarks, setBookmarks] = useState([])
+
+useEffect(() => {
+  axios.get(`${API}/bookmarks`).then((res) => {
+setBookmarks(res.data)
+  }).catch ((error) => console.error)
+},[API])
+
+
   return (
     <div className="Bookmarks">
       <section>

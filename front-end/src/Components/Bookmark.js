@@ -5,9 +5,7 @@ function Bookmark({ bookmark }) {
     <tr>
       <td>
         {bookmark.is_favorite ? (
-          <span>⭐️</span>
-        ) : (
-          <span>&nbsp; &nbsp; &nbsp;</span>
+          <span>⭐️</span>) : (<span>&nbsp; &nbsp; &nbsp;</span>
         )}
       </td>
       <td>

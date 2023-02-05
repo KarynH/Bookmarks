@@ -1,6 +1,7 @@
+
 {
   "name": "bookmarks-react-solution",
-  "proxy": "https://sheltered-island-89188.herokuapp.com",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
